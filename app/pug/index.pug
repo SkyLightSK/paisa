@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+	include modules/head
+	body.main_page.header-padding-top
+		include modules/components/header
+		main
+			include modules/components/main_banner_3D
+			include modules/components/slick_slider_main
+			include modules/components/about_center_block
+			include modules/components/calculator
+			include modules/components/advantages
+			- var imgListIconAdvantages = ['woman-lips', 'medal', 'joy', 'mortarboard'];
+			- var titleListAdvantages = ['5 лет на рынке эстетической медицины', 'только сертифицированные специалисты', '250 довольных клиентов', '13 профессионалов, делающих вас лучше'];
+			+ advantages(imgListIconAdvantages, titleListAdvantages)
+			include modules/components/read_more_banner
+			include modules/components/review
+		include modules/components/footer
+		include modules/components/popUp
+		.paranja.close_trigger_form
+		script(src='js/index.js' defer)

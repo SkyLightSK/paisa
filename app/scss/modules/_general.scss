@@ -1,0 +1,9 @@
+.flex_grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .flex_grid_col_half{
+    width: 49%;
+  }
+}

@@ -4,17 +4,106 @@ html(lang='en')
 	body.main_page.header-padding-top
 		include modules/components/header
 		main
-			include modules/components/main_banner_3D
-			include modules/components/slick_slider_main
-			include modules/components/about_center_block
-			include modules/components/calculator
-			include modules/components/advantages
-			- var imgListIconAdvantages = ['woman-lips', 'medal', 'joy', 'mortarboard'];
-			- var titleListAdvantages = ['5 лет на рынке эстетической медицины', 'только сертифицированные специалисты', '250 довольных клиентов', '13 профессионалов, делающих вас лучше'];
-			+ advantages(imgListIconAdvantages, titleListAdvantages)
-			include modules/components/read_more_banner
-			include modules/components/review
+
+			.about_us_block
+				.container
+					.row
+						.col-lg-4
+							.about_us_icons_left
+								- var titleLeft = ["Альтернативный источник энергии", "Электроснабжение промышленных и гражданских сооружений"]
+								- var imgLeft = ["green","blue"]
+								each val in [0,1]
+									.about_us_icons_left_item
+										h3= titleLeft[val]
+										img(src="img/"+ imgLeft[val] +".png")
+						.col-lg-4
+							.center_about_us_description
+								.center_about_us_description_wrapper
+									.center_about_us_description_title
+										h3 О нас
+									.center_about_us_description_text
+										p Текст о компании на 250 символов. Понравится многим. Светильник Mini воплощение грации и геометрического великолепия. Светильник напоминает космическое буйство стихий на краю обитаемой вселенной. Воспользуйтесь светильником Carmina для создания необычной, межпланетной обстановки.
+
+						.col-lg-4
+							.about_us_icons_right
+								- var title = [ "Удаленный: - контроль, - управление, - наблюдение","Станки с числовым прграммным управлением, фрезировка, лазерная гравировка"]
+								- var img = ["red","brown"]
+								each val in [0,1]
+									.about_us_icons_right_item
+										h3= title[val]
+										img(src="img/" + img[val] + ".png")
+
+			.banner_description_block
+
+				.background-shape
+
+				.banner_description_block_wrapper
+					.banner_description_title
+						h3 ПАИСА ЭТО
+
+				.banner_description_icon_block
+					.container
+						.row
+							.banner_description_icon_block_wrapper
+								-var icons = ["like","-------2","customer--1-","safety","hand"];
+								-var title = ["Просто","Актуально","Индивидуально","Стабильно","Аккуратно"];
+								each val in [0,1,2,3,4]
+									-if(val!=0)
+										.col-lg-4.banner_description_dots_wrapper
+											.banner_description_dots
+												.col-lg-4.dot •
+												.col-lg-4.dot •
+												.col-lg-4.dot •
+
+									.banner_description_icon_block_item.col-lg-10
+										.banner_description_icon_wrapper
+											.banner_description_icon_block_img
+												img(src="img/icons/"+icons[val]+".png")
+										.banner_description_icon_block_title
+											h3=title[val]
+
+			form(class="form-horizontal")
+				.container
+					.col-lg-6
+						.row
+							.callform_input
+								.form-group
+									//label(class="control-label col-sm-2" for="name")
+									.col-sm-12
+										input(type="text" class="form-control" id="name" placeholder="ФИО")
+								.form-group
+									//label(class="control-label col-sm-2" for="number")
+									.col-sm-12
+										input(type="number" class="form-control" id="number" placeholder="Номер телефона")
+								.form-group
+									//label(class="control-label col-sm-2" for="email")
+									.col-sm-12
+										input(type="email" class="form-control" id="email" placeholder="E-mail")
+
+					.col-lg-6
+						.row
+							.callform_textarea
+								.form-group
+									//label(class="control-label col-sm-2" for="email")
+									.col-sm-12
+										textarea(name="text" class="" id="comment" rows="7" cols="50" placeholder="Комментарий")
+
+
+					.form-group
+						.col-lg-12
+							a(href='')
+								button(type="submit" class="btn btn-default ") Связаться с нами
+
+
+			.consultation_button
+				.consultation_button_wrapper
+					a.dropdown_button
+						button Получить консультацию
+				.consultation_button_angle
+					i(class="fa fa-angle-double-down", aria-hidden="true")
+
+
 		include modules/components/footer
-		include modules/components/popUp
-		.paranja.close_trigger_form
-		script(src='js/index.js' defer)
+//		include modules/components/popUp
+
+script(src='js/index.js' defer)

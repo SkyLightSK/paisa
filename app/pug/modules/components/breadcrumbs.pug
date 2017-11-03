@@ -1,12 +1,13 @@
-mixin breadcrumbs(pages)
-    - pages = pages ? pages : [];
+mixin breadcrumbs(titles)
+    - titles = titles ? titles : [];
+
     .breadcrumbs
         ul
-            -for(var page = 0; page < pages.length; page++)
-                if (pages[page] == pages[pages.length - 1])
+            -for(var i = 0 ; i<titles.length ; i++)
+                -if(i==0)
                     li
-                        a(href='#').current= pages[pages.length - 1]
-                else
+                        a(href='#')=titles[i]
+                -else
+                    span >
                     li
-                        a(href='#')= pages[page]
-                    span —
+                        a(href='#')=titles[i]

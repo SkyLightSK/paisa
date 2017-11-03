@@ -1,0 +1,162 @@
+.alternative_main_description_block{
+  .title{
+
+    h1{
+      text-align: left ;
+
+    }
+  }
+  .alternative_main_description{
+
+    p{
+      color: #000000;
+      font-family: OpenSans;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+.sun_battery_block {
+  text-align: right;
+  position: relative;
+  border: 5px solid transparent;
+  border-left-color: #e8e8e8;
+  border-right-color: rgba(158, 152, 144, 0.34);
+
+
+  &:before, &:after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+  }
+
+  &:before {
+    content: '';
+    right: -3px;
+    top:-5px;
+    height: 5px;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(left, #000, transparent);
+    background-image: -moz-linear-gradient(left, #000, transparent);
+    background-image: -o-linear-gradient(left, #000, transparent);
+    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.34));
+    //background-image: linear-gradient(to left, rgba(158, 152, 144, 0.21) 0%, rgba(158, 152, 144, 0.31) 4%, rgba(158, 152, 144, 0.39) 7%, rgba(164, 159, 151, 0.54) 13%, #9e9890 100%);
+  }
+
+  &:after {
+    content: '';
+    right: -3px;
+    height: 5px;
+    bottom: -5px;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(left, #000, transparent);
+    background-image: -moz-linear-gradient(left, #000, transparent);
+    background-image: -o-linear-gradient(left, #000, transparent);
+    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.35));
+    //background-image: linear-gradient(to left, rgba(158, 152, 144, 0.21) 0%, rgba(158, 152, 144, 0.31) 4%, rgba(158, 152, 144, 0.39) 7%, rgba(164, 159, 151, 0.54) 13%, #9e9890 100%);
+
+  }
+
+  .sun_battery_title {
+
+    h3 {
+
+    }
+  }
+  .sun_battery_description {
+
+    p {
+
+    }
+  }
+  .sun_battery_button {
+    a {
+      color: black;
+      button {
+        border-radius: 25px;
+        background-color: #fac51d;
+        color: #000000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border:none;
+        padding:10px 40px;
+
+      }
+    }
+  }
+}
+
+.quote_block{
+  text-align: center;
+
+  .quote_text{
+
+    p{
+
+      color: #040404;
+      font-family: OpenSans;
+      font-size: 18px;
+      font-weight: 400;
+
+      strong{
+        color: #f7931e;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.air_energy_block {
+  text-align: left;
+
+  .air_energy_title {
+
+    h3 {
+
+    }
+  }
+  .air_energy_description {
+
+    p {
+
+    }
+  }
+  .air_energy_button {
+    a {
+      color: black;
+      button {
+        border-radius: 25px;
+        background-color: #fac51d;
+        color: #000000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border:none;
+        padding:10px 40px;
+      }
+    }
+  }
+}
+
+.alternative_main_block{
+  position: relative;
+  .alternative_main_block_wrapper{
+
+  }
+}
+
+.vertical_slider{
+  position: absolute;
+  right: -15%;
+  top:-30px;
+  width: 356px;
+  img{
+
+  }
+}

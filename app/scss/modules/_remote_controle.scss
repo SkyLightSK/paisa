@@ -1,0 +1,218 @@
+.sprut_block {
+  .sprut_block_wrapper {
+    text-align: center;
+    .sprut_block_img_wrapper {
+      img {
+
+      }
+    }
+  }
+}
+
+.system_sprut_description_block{
+
+  .system_sprut_description_wrapper{
+
+    margin: 20px 0px;
+
+    .system_sprut_item{
+      background-color: #f8f8f8;
+      border-radius: 30px;
+      border: 1px solid #888888;
+      min-height: 636px;
+      padding:25px;
+
+      .system_sprut_item_image_wrapper {
+        text-align: center;
+
+        img{
+
+        }
+      }
+      .system_sprut_item_title{
+        h3{
+          text-align: center;
+          color: #020202;
+          font-family: Raleway;
+          font-size: 24px;
+          font-weight: 800;
+        }
+      }
+      .system_sprut_item_option_list {
+        ul {
+          list-style: none; /* Remove list bullets */
+          padding: 0;
+          margin: 0;
+
+          li {
+            padding-left: 16px;
+            font-size: 18px;
+            display: flex;
+
+            &:before {
+              content: "•"; /* Insert content that looks like bullets */
+              padding-right: 17px;
+              font-size: 35px;
+              color: $mainYellow; /* Or a color you prefer */
+              vertical-align: middle;
+              line-height: 26px;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+.remote_control_banners_block {
+
+  .remote_control_banner_left_image {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .remote_control_banner_left {
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      text-align: center;
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0px 17px;
+      }
+    }
+
+  }
+
+  .remote_control_banner_right_image {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .remote_control_banner_right {
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      text-align: center;
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0px 17px;
+      }
+    }
+  }
+
+}
+
+
+.remote_control_services {
+  margin: 40px 0px;
+  .remote_control_services_wrapper {
+
+    position: relative;
+    margin-bottom: 500px;
+
+    &:after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      background-image: url(../../img/shape_bottom.svg);
+      //bottom: -238px;
+      background-size: contain;
+      //left: -337px;
+      background-repeat: no-repeat;
+    }
+
+    background-color: white;
+    .remote_control_services_title {
+      text-align: center;
+      h3 {
+        color: #000000;
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    .remote_control_services_item_block {
+
+      .remote_control_services_item {
+        padding: 20px 0px;
+        border-radius: 30px;
+        border: 1px solid #888888;
+        background-color: #f8f8f8;
+
+        text-align: center;
+        img {
+
+        }
+
+        h3 {
+          color: #020202;
+          font-family: Raleway;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+      }
+    }
+  }
+}
+
+.faq_block {
+  margin: 20px 0px;
+  .faq_block_wrapper {
+
+    .faq_item_block{
+      background-color: white;
+
+      .faq_item_title{
+
+        h3{
+          color: #282828;
+          font-family: Raleway;
+          font-size: 24px;
+          font-weight: 700;
+          padding: 20px;
+          margin: 0px;
+        }
+      }
+      .faq_item_description{
+
+        overflow: hidden;
+        transition: max-height .4s linear;
+        //max-height: 0px;
+
+
+
+        //&.dropped{
+        //  height: 100% ;
+        //}
+        //
+        //&.dropped_height{
+        //  max-height: 0px;
+        //}
+
+        p{
+          color: #282828;
+          font-family: "Open Sans";
+          font-size: 18px;
+          font-weight: 400;
+          padding: 20px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

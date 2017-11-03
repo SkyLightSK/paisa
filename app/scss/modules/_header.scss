@@ -1,21 +1,21 @@
 header {
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgb(255, 255, 255);
 	width: 100%;
 	position: absolute;
 	top: 0;
 	color: $mainColor;
 	font-size: $smallTextSize;
-	font-family: "Helvetica", sans-serif;
+	font-family: "Raleway";
 	font-weight: 500;
 	padding: 20px 0 25px;
 	z-index: 100;
 	.header_wrapper {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		position: relative;
 		.logo {
-			width: 290px;
+			width: 226px;
 			img {
 				width: 100%;
 			}
@@ -29,11 +29,10 @@ header {
 				flex-direction: column;
 				justify-content: space-around;
 				align-items: center;
-				width: 720px;
-				margin-right: 25px;
+				width: 884px;
 				.header_main_content_contacts {
 					display: flex;
-					justify-content: space-between;
+					justify-content: flex-end;
 					align-items: center;
 					width: 100%;
 					padding-bottom: 15px;
@@ -101,8 +100,6 @@ header {
 					text-transform: uppercase;
 					display: flex;
 					width: 100%;
-					padding-top: 15px;
-					border-top: 2px solid rgba(136, 136, 136, 0.3);
 					position: relative;
 					transition: all 0.5s;
 					& > ul {
@@ -112,6 +109,21 @@ header {
 						display: flex;
 						justify-content: space-between;
 						width: 100%;
+                        li{
+                            padding: 8px;
+                            
+                            &:hover{
+                                border-radius: 21px;
+                                background-color: $mainYellow;
+                            }
+                            
+                            a{
+                                
+                                &:hover{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
 						.nav_lists {
 							display: block;
 							position: absolute;

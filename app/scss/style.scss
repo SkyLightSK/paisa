@@ -135,6 +135,138 @@
   src: url("../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular.eot") format("embedded-opentype"), url("../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular.ttf") format("truetype");
 }
 
+
+/* OpenSans
+ ==========================================================================
+ */
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/OPENSANS-BOLD.TTF") format("truetype");
+}
+
+
+/* RaleWay
+ ==========================================================================
+ */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/RaleWay/RALEWAY-THIN.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/RaleWay/RALEWAY-EXTRALIGHT.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/RaleWay/RALEWAY-EXTRALIGHT-ITALIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/RaleWay/RALEWAY-LIGHT.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/RaleWay/RALEWAY-LIGHT-ITALIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RaleWay/RALEWAY-REGULAR.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/RaleWay/RALEWAY-REGULAR-ITALIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/RaleWay/RALEWAY-MEDIUM.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/RaleWay/RALEWAY-MEDIUM-ITALIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/RaleWay/RALEWAY-SEMIBOLD.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/RaleWay/RALEWAY-SEMIBOLD.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RaleWay/RALEWAY-SEMIBOLD.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/RaleWay/RALEWAY-BOLD-ITALIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/RaleWay/RALEWAY-EXTRABOLD.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/RaleWay/RALEWAY-EXTRABOLD.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/RaleWay/RALEWAY-BLACK.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/RaleWay/RALEWAY-BLACK-ITALIC.TTF") format("truetype");
+}
+
+
+
+
+
+
 /* typo size
  ==========================================================================
  */
@@ -153,7 +285,7 @@ $XXXLargeTextSize: 48px;
 /* colors
  ==========================================================================
  */
-$mainColor: #69482c;
+$mainColor: #000000;
 $bannerBackgroundColor: #2d2322;
 $hoverMainColor: #835e34;
 $standartPostTextColor: #333333;
@@ -164,7 +296,7 @@ $hoverDarkGold: #c0ad99;
 $headerHoverColor: #463737;
 $breadcrumbColor: rgba(175, 151, 126, 0.4);
 $breadcrumbColorChosen: #593415;
-$mainPurple: #af977e;
+$mainPurple: #000000;
 $bannerBackgroundServices: rgba(182, 164, 139, 0.15);
 $twoColorBackground: rgba(249, 249, 249, 0.2);
 $darkTextColor: #000000;
@@ -174,6 +306,7 @@ $backgroundMenuColor: #af977e;
 $squareHoverMenuColor: #e7c9ad;
 $formStandartColor: #757575;
 $sliderMainBakcground: #dedede;
+$mainYellow: #fac51d;
 
 
 main {
@@ -182,7 +315,7 @@ main {
 .main_page {
   background-color: $twoColorBackground;
   main {
-    padding-top: 0;
+    padding-top: 140;
   }
 }
 
@@ -195,39 +328,20 @@ main {
 @import '../libs/slick-1.6.0/slick/slick.scss';
 @import '../libs/slick-1.6.0/slick/slick-theme.scss';
 @import '../libs/animate/animate';
-@import 'modules/typo';
+//@import 'modules/typo';
 
 /* modules
  ==========================================================================
  */
 @import 'modules/header';
+@import 'modules/index';
 @import 'modules/breadcrumbs';
-@import 'modules/read_more_banner';
-@import 'modules/about_center_block';
-@import 'modules/review';
-@import 'modules/footer';
-@import 'modules/our_specialists';
-@import 'modules/general';
+@import 'modules/remote_controle';
+@import 'modules/alternative';
 @import 'modules/title';
-@import 'modules/specialists';
-@import 'modules/shares_block';
-@import 'modules/popUp';
-@import 'modules/main_banner_3D';
-@import 'modules/advantages';
-@import 'modules/services';
-@import 'modules/specialist_card';
-@import 'modules/videos';
-@import 'modules/second_level_services';
-@import 'modules/about_the_center';
-@import 'modules/image_gallery';
-@import 'modules/specific_service';
-@import 'modules/promotion_banner';
-@import 'modules/kompliment_grid';
-@import 'modules/equipment';
-@import 'modules/specific_equipment';
-@import 'modules/slick_slider_main';
-@import 'modules/main_page';
-@import "modules/calculator";
+
+@import 'modules/footer';
+@import 'modules/general';
 
 /* styles
  ==========================================================================
@@ -248,5 +362,12 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  background-image: radial-gradient(circle 1050px at center, rgba(255, 255, 255, 0.5) 0%, rgba(158, 152, 144, 0.5) 100%);
+
+    
+
 }
 

@@ -1,0 +1,135 @@
+doctype html
+html(lang='en')
+    include modules/head
+    body.manufacturing_products
+        include modules/components/header
+        main
+
+            -var titles =["Главная", "Станки ЧПУ","Проектирование станков","Изготовление продукции на ЧПУ"];
+
+            include modules/components/breadcrumbs
+            .container
+                +breadcrumbs(titles)
+
+
+                .main_banner_title_text
+                    include modules/components/title
+                    +title("Изготовление продукции на ЧПУ","yellow")
+
+            .main_manufacturing_products_block
+
+                .container
+
+                    .manufacturing_products_title
+                        h3 На станке ЧПУ (числовое программное управление) в зависимости от количества рабочих осей  можно изготавливать следующую продукцию:
+
+                    .main_manufacturing_products_block_wrapper
+                        .row
+
+                            -var textList = ["Гравировка надписей, фигурная роспись сувенирной продукции, изготовление шкатулок, подставок под фотографии, декоративных светильников и т.д.","Обработка с высокой точностью деталей в проекции 2D ","Изготовление печатных плат для радиоаппаратуры","Лазерная гравировка сложных рисунков, и лазерная резка","Резка рельефных картин и фотографий 2,5D","Сверление радиотехнических плат, шаблонов, пуансонов и т.д."]
+
+                            -for(var counter=0; counter<textList.length;counter++)
+                                .col-lg-6
+                                    .main_manufacturing_products_item
+                                        .row
+                                            .col-lg-4
+                                                .manufacturing_products_list_number
+                                                     h3= "0"+(counter+1)
+                                            .col-lg-8.middle_text
+                                                .manufacturing_products_list_text
+                                                    p= textList[counter]
+
+            .banner_description_block
+
+                .banner_description_block_wrapper
+                    .banner_description_title
+                        h3 НАШИ РАБОТЫ
+
+                .banner_description_icon_block
+                    .container
+                        .row
+                            .my-container
+                                .slider-container
+                                    .slider.slider-1
+                                        each val in [1,2,3,4]
+                                            .featured-slide.featured-slide-1
+                                                -if(val==1 || val==3)
+                                                    img(src="img/manufacturing_products/slide.png")
+                                                -if(val==2 || val==4)
+                                                    img(src="img/manufacturing_products/slide2.png")
+
+                                .slider-nav-container
+                                    .wrapper
+                                        .slider-nav.slider-nav-1
+                                            each val in [1,2,3,4]
+                                                .slide-link.slide-link-1
+                                                    -if(val==1 || val==3)
+                                                        img(src="img/manufacturing_products/slide.png")
+                                                    -if(val==2 || val==4)
+                                                        img(src="img/manufacturing_products/slide2.png")
+
+
+
+            form(class="callback_form")
+                    .container
+                        .col-lg-12
+                            +title("УЗНАТЬ СТОИМОСТЬ","none")
+                        .col-lg-6
+                            .row
+                                .callform_input
+                                    .form-group
+                                        //label(class="control-label col-sm-2" for="name")
+                                        .col-sm-12
+                                            input(type="text" class="form-control" id="name" placeholder="ФИО")
+                                    .form-group
+                                        //label(class="control-label col-sm-2" for="number")
+                                        .col-sm-12
+                                            input(type="number" class="form-control" id="number" placeholder="Номер телефона")
+                                    .form-group
+                                        //label(class="control-label col-sm-2" for="email")
+                                        .col-sm-12
+                                            input(type="email" class="form-control" id="email" placeholder="E-mail")
+
+                        .col-lg-6
+                            .row
+                                .callform_textarea
+                                    .form-group
+                                        //label(class="control-label col-sm-2" for="email")
+                                        .col-sm-12
+                                            textarea(name="text" class="" id="comment" rows="7" cols="50" placeholder="Комментарий")
+
+
+                        .form-group
+                            .col-lg-12
+                                a(href='')
+                                    button(type="submit" class="btn btn-default ") Связаться с нами
+
+            .faq_block
+                .faq_block_wrapper
+                    .container
+                        +title("Вопросы и ответы","yellow")
+
+                        .faq_item_block
+                            .faq_item_title
+                                h3 Что входит в состав си   стемы мониторинга «СПРУТ»?
+                            .faq_item_description
+                                p Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+
+                        .faq_item_block
+                            .faq_item_title
+                                h3 Что входит в состав си   стемы мониторинга «СПРУТ»?
+                            .faq_item_description
+                                p.
+                                    епосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    епосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    епосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+
+
+
+
+        include modules/components/footer
+
+script(src='js/index.js' defer)

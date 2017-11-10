@@ -22,7 +22,10 @@
   position: relative;
   border: 5px solid transparent;
   border-left-color: #e8e8e8;
-  border-right-color: rgba(158, 152, 144, 0.34);
+  border-right-color: rgba(158, 152, 144, 0.2);
+  margin: 87px 0px;
+  margin-right: 60px;
+  padding: 29px;
 
 
   &:before, &:after{
@@ -41,7 +44,7 @@
     background-image: -webkit-linear-gradient(left, #000, transparent);
     background-image: -moz-linear-gradient(left, #000, transparent);
     background-image: -o-linear-gradient(left, #000, transparent);
-    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.34));
+    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.2));
     //background-image: linear-gradient(to left, rgba(158, 152, 144, 0.21) 0%, rgba(158, 152, 144, 0.31) 4%, rgba(158, 152, 144, 0.39) 7%, rgba(164, 159, 151, 0.54) 13%, #9e9890 100%);
   }
 
@@ -54,37 +57,80 @@
     background-image: -webkit-linear-gradient(left, #000, transparent);
     background-image: -moz-linear-gradient(left, #000, transparent);
     background-image: -o-linear-gradient(left, #000, transparent);
-    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.35));
+    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.2));
     //background-image: linear-gradient(to left, rgba(158, 152, 144, 0.21) 0%, rgba(158, 152, 144, 0.31) 4%, rgba(158, 152, 144, 0.39) 7%, rgba(164, 159, 151, 0.54) 13%, #9e9890 100%);
 
   }
 
-  .sun_battery_title {
+  .sun_battery_image{
 
-    h3 {
+    .sun_battery_image_sun {
+      img {
+        position: absolute;
+        left: 0px;
+        animation: rotation 10s linear infinite;
+        z-index: 1;
+        left: 62px;
+        top: -69px;
 
+        //@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+        @keyframes rotation {
+          0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+          100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(720deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+        }
+      }
+    }
+    .sun_battery_image_platform {
+      img {
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+      }
     }
   }
-  .sun_battery_description {
 
-    p {
 
-    }
-  }
-  .sun_battery_button {
-    a {
-      color: black;
-      button {
-        border-radius: 25px;
-        background-color: #fac51d;
-        color: #000000;
+  .sun_battery_content {
+    padding-left: 222px;
+    .sun_battery_title {
+
+      h3 {
+        color: #040404;
         font-family: Raleway;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 700;
-        text-transform: uppercase;
-        border:none;
-        padding:10px 40px;
+      }
+    }
+    .sun_battery_description {
 
+      p {
+        color: #040404;
+        font-family: OpenSans;
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+    .sun_battery_button {
+      a {
+        color: black;
+        button {
+          border-radius: 25px;
+          background-color: #fac51d;
+          color: #000000;
+          font-family: Raleway;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          border: none;
+          padding: 10px 40px;
+
+        }
       }
     }
   }
@@ -92,7 +138,7 @@
 
 .quote_block{
   text-align: center;
-
+  margin: 100px 0px;
   .quote_text{
 
     p{
@@ -101,6 +147,8 @@
       font-family: OpenSans;
       font-size: 18px;
       font-weight: 400;
+      padding: 0px 88px;
+      margin-right: 75px;
 
       strong{
         color: #f7931e;
@@ -113,32 +161,100 @@
 
 .air_energy_block {
   text-align: left;
+  padding-right: 222px;
+  position: relative;
+  border: 5px solid transparent;
+  border-left-color: #e8e8e8;
+  border-right-color: rgba(158, 152, 144, 0.2);
+  margin: 60px 0px;
+  margin-right: 60px;
+  padding: 29px;
+  margin-bottom: 37px;
 
-  .air_energy_title {
 
-    h3 {
-
-    }
+  &:before, &:after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
   }
-  .air_energy_description {
 
-    p {
-
-    }
+  &:before {
+    content: '';
+    right: -3px;
+    top:-5px;
+    height: 5px;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(left, #000, transparent);
+    background-image: -moz-linear-gradient(left, #000, transparent);
+    background-image: -o-linear-gradient(left, #000, transparent);
+    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.2));
+    //background-image: linear-gradient(to left, rgba(158, 152, 144, 0.21) 0%, rgba(158, 152, 144, 0.31) 4%, rgba(158, 152, 144, 0.39) 7%, rgba(164, 159, 151, 0.54) 13%, #9e9890 100%);
   }
-  .air_energy_button {
-    a {
-      color: black;
-      button {
-        border-radius: 25px;
-        background-color: #fac51d;
-        color: #000000;
+
+  &:after {
+    content: '';
+    right: -3px;
+    height: 5px;
+    bottom: -5px;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(left, #000, transparent);
+    background-image: -moz-linear-gradient(left, #000, transparent);
+    background-image: -o-linear-gradient(left, #000, transparent);
+    background-image: linear-gradient(left, #e8e8e8, rgba(158, 152, 144, 0.2));
+    //background-image: linear-gradient(to left, rgba(158, 152, 144, 0.21) 0%, rgba(158, 152, 144, 0.31) 4%, rgba(158, 152, 144, 0.39) 7%, rgba(164, 159, 151, 0.54) 13%, #9e9890 100%);
+
+  }
+
+  .air_energy_content {
+    .air_energy_title {
+
+      h3 {
+        color: #040404;
         font-family: Raleway;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 700;
-        text-transform: uppercase;
-        border:none;
-        padding:10px 40px;
+      }
+    }
+    .air_energy_description {
+
+      p {
+        color: #040404;
+        font-family: OpenSans;
+        font-size: 17px;
+        font-weight: 400;
+        padding-right: 200px;
+
+          span{
+            font-family: Georgia;
+            font-weight: 600;
+          }
+      }
+    }
+    .air_energy_button {
+      a {
+        color: black;
+        button {
+          border-radius: 25px;
+          background-color: #fac51d;
+          color: #000000;
+          font-family: Raleway;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          border: none;
+          padding: 10px 40px;
+        }
+      }
+    }
+  }
+  .air_energy_image_wrap {
+    position: relative;
+    .air_energy_image {
+      img {
+        position: absolute;
+        top: -300px;
+        right: 0px;
       }
     }
   }
@@ -159,4 +275,20 @@
   img{
 
   }
+}
+
+.slick-prev, .slick-next{
+  z-index: 2;
+}
+
+.slick-prev:before{
+  content: '';
+  background-image: url("../../img/arrow.png");
+  background-size: contain;
+}
+
+.slick-prev:before, .slick-next:before{
+  font-size: 64px;
+  font-weight: 100;
+  font-family: FontAwesome;
 }

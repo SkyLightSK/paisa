@@ -1,0 +1,177 @@
+
+.main_banner_title_block {
+  position: relative;
+  .main_banner_title {
+    .main_banner_title_image {
+      img {
+          width: 100%;
+      }
+    }
+    .main_banner_title_text {
+      position: absolute;
+      top: 43%;
+      left: 51%;
+      width: 61%;
+      transform: translate(-50%,-50%);
+
+      h1{
+        text-shadow: -5px 5px 6px rgba(49, 49, 49, 0.44);
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.main_power_supply_description_block {
+  .main_power_supply_description_block_wrapper {
+    .main_power_supply_description_text {
+      p {
+        color: #000000;
+        font-family: OpenSans;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 50px 100px;
+
+          b{
+            font-style: normal;
+            font-family: sans-serif;
+          }
+      }
+    }
+    .main_power_supply_description_block_title {
+      h3 {
+        color: #000000;
+        font-family: "OpenSans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 65px auto;
+        text-align: center;
+        width: 800px;
+      }
+    }
+    .main_power_supply_description_block_list {
+      ul {
+        list-style: none;
+        li {
+          position: relative;
+          color: #000000;
+          font-family: OpenSans;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px;
+          margin: 20px 0px;
+          &:before{
+            content: "•";
+            font-size: 34px;
+            color: $mainYellow;
+            position: absolute;
+            left: -30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form_option_and_input_wrap{
+  margin-bottom: 50px;
+}
+
+.callback_form {
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+
+  .form-group{
+
+    input, textarea, select{
+      width: 100%;
+      border: 2px solid #7c7c7c;
+      border-radius: 25px;
+      background-color: transparent;
+      padding: 13px 27px;
+      text-align-last: center;
+      font-size: 16px;
+
+
+      &::placeholder{
+        color: #000000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      &:focus{
+        border: 2px solid #fac51d;
+        outline: none;
+
+      }
+    }
+
+    #number{
+      margin: 12px 0px;
+    }
+
+    .machine_size{
+      margin: 13px 0px;
+    }
+
+    select{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: transparent url("../../img/design_machines/arrow-down.png") no-repeat 309px 16px;
+
+      &:focus{
+        background: transparent url("../../img/design_machines/full_ark_top.png") no-repeat 318px 6px;
+      }
+    }
+
+    .call_form_options {
+
+      select {
+        color: #000000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        text-align-last: center;
+        option {
+        }
+      }
+    }
+    input{
+      text-align: center;
+
+    }
+
+    textarea{
+      resize: none;
+      height: 176px;
+      padding: 11px 27px;
+      text-align: left;
+      text-align-last: left;
+
+    }
+
+    a{
+
+      color: black;
+
+      button[type="submit"] {
+        border-radius: 30px;
+        border: 0px;
+        background-color: $mainYellow;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 800;
+        padding: 12px 55px;
+        margin: 50px 0px;
+      }
+    }
+  }
+}

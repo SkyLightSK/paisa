@@ -12,6 +12,7 @@ $(document).ready(function () {
                 function(){$(this).css({"max-height":  elemHeight+"px", "transition": "max-height .4s linear"});
             });
 
+            $(this).find("h3").toggleClass("droppedArrow");
         });
 
         elemTitle.click();

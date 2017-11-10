@@ -1,0 +1,182 @@
+doctype html
+html(lang='en')
+    include modules/head
+    body.design_machines
+        include modules/components/header
+        main
+            include modules/components/title
+            -var titles =["Главная", "Альтернативные источники энергии", "Солнечные батареи"];
+
+            include modules/components/breadcrumbs
+            .container
+                +breadcrumbs(titles)
+
+                +title("Для проектирования станков мы обладаем всеми необходимыми условиями","yellow")
+
+
+
+            .main_solar_panel_description_block
+                .banner_description_block.design_machines_icons
+
+                    .banner_description_icon_block
+                        .container
+                            .row
+                                .banner_description_icon_block_wrapper
+                                    -var icons = ["badge","icon","-----11","engineering"];
+                                    -var title = ["Приемлемые цены ","Высококлассные специалисты","Качество","Универсальность"]
+                                    each val in [0,1,2,3]
+                                        -if(val!=0)
+                                            .col-lg-4.banner_description_dots_wrapper
+                                                .banner_description_dots
+                                                    .col-lg-4.dot •
+                                                    .col-lg-4.dot •
+                                                    .col-lg-4.dot •
+
+                                        .banner_description_icon_block_item.col-lg-10
+                                            .banner_description_icon_wrapper
+                                                .banner_description_icon_block_img
+                                                    img(src="img/design_machines/" + icons[val] + ".png")
+                                            .banner_description_icon_block_title
+                                                h3=title[val]
+                                            .banner_description_icon_block_text
+                                                p Многосторонний контроль качества на всех этапах
+
+            +title("КАК ВСЕ ПРОИСХОДИТ?","top-yellow")
+            .work_steps_block
+                .work_steps_wrapper
+                    .row
+                        .container
+                            -var imgList = ["step1","step2","step3","step4","step5","step6"]
+                            -var titleList = ["Определение с заказчиком концепцию станка ЧПУ","Согласование рабочего поля станка","Определение нужной точности работы станка. ","Определение материала, с которым будет работать станок","Определение высоты горизонтальной оси Z","Определение режущего инструмента станка и обучение работы на станке"]
+                            -for(var counter=0;counter<imgList.length;counter++)
+                                .col-lg-4
+                                    .work_step_item(class = counter < 3 ? "down_arrow" : counter > 2 && counter < 5 ? "angle_arrow": ""  )
+                                        .work_step_item_content
+                                            .step_background_number
+                                                -var step = counter+1 == 2 ? 3 : counter+1 == 3 ? 5 : counter+1 == 4 ? 2 : counter+1 == 5 ? 4 : counter+1;
+                                                p= step
+                                            .step_content_block
+                                                .step_count
+                                                    h3 Шаг #{step}
+                                                .step_title
+                                                    p= titleList[counter]
+                                        .step_image
+                                            img(src="img/design_machines/"+imgList[counter]+".png")
+
+
+
+            .cnc_machines_scheme_block
+                .cnc_machines_scheme_block_wrapper
+                    +title("СТАНКИ ЧПУ","top-yellow")
+                    .container
+                        .row
+                            .col-lg-6
+                                .scheme_block
+                                    .scheme_title
+                                        h3  Схема станка ЧПУ
+                                        img(src="img/solar_panels/arr_step.png")
+                                    .scheme_img
+                                        img(src="img/design_machines/scheme.png")
+                            .col-lg-6
+                                .cnc_machine_block
+                                    .cnc_machine_title
+                                        h3  Станок ЧПУ
+                                        img(src="img/solar_panels/arr_step.png")
+                                    .cnc_machine_img
+                                        img(src="img/design_machines/cnc_machine.png")
+            .banner_description_block
+                .banner_description_block_wrapper
+                    .banner_description_title
+                        h3 ОСТАВИТЬ ЗАЯВКУ НА ПРОЕКТИРОВКУ СТАНКА
+
+                .banner_description_icon_block
+                    .container
+                        form(class="callback_form")
+                            .form_option_and_input_wrap
+                                .row
+                                    .col-lg-6
+                                        .call_form_options
+                                            .row
+                                                .form-group
+                                                    .col-sm-12
+                                                        select(name="select-choice" id="select-choice")
+                                                            option(value="Choice 1") Задача станка
+                                                            option(value="Choice 2") Choice 2
+                                                            option(value="Choice 2") Choice 2
+                                                    .col-sm-12
+                                                        select(name="select-choice" class="machine_size")
+                                                            option(value="Choice 1") Размер станка
+                                                            option(value="Choice 2") Choice 2
+                                                            option(value="Choice 2") Choice 2
+
+                                                    .col-sm-12
+                                                        select(name="select-choice" id="select3")
+                                                            option(value="Choice 1") Материал
+                                                            option(value="Choice 2") Choice 2
+                                                            option(value="Choice 2") Choice 2
+
+
+                                    .col-lg-6
+                                        .callform_input
+                                            .row
+                                                .form-group
+                                                    //label(class="control-label col-sm-2" for="name")
+                                                    .col-sm-12
+                                                        input(type="text" class="form-control" id="name" placeholder="ФИО")
+                                                .form-group
+                                                    //label(class="control-label col-sm-2" for="number")
+                                                    .col-sm-12
+                                                        input(type="number" class="form-control" id="number" placeholder="Номер телефона")
+                                                .form-group
+                                                    //label(class="control-label col-sm-2" for="email")
+                                                    .col-sm-12
+                                                        input(type="email" class="form-control" id="email" placeholder="E-mail")
+
+                            .col-lg-12
+                                .row
+                                    .callform_textarea
+                                        .row
+                                            .form-group
+                                                .col-sm-12
+                                                    textarea(name="text" class="" id="comment" rows="7" cols="50" placeholder="Комментарий")
+
+
+                            .form-group
+                                .col-lg-12
+                                    a(href='')
+                                        button(type="submit" class="btn btn-default ") ОСТАВИТЬ ЗАЯВКУ
+
+
+
+
+
+
+            .faq_block
+                .faq_block_wrapper
+                    .container
+                        +title("Вопросы и ответы","yellow")
+
+                        .faq_item_block
+                            .faq_item_title
+                                h3 Что входит в состав си   стемы мониторинга «СПРУТ»?
+                            .faq_item_description
+                                p Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+
+                        .faq_item_block
+                            .faq_item_title
+                                h3 Что входит в состав си   стемы мониторинга «СПРУТ»?
+                            .faq_item_description
+                                p.
+                                    епосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    епосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    епосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+                                    Непосредственно в состав системы мониторинга СПРУТ входит: 1. Оболочка визуального восприятия информации, которая устанавливается на компьютер и внешний вид, которой программируется по желанию заказчика. 2. Модули снятия параметров и контроля процессов. 3. Соединительная линия передачи данных. 4. Модуль выхода в интернет или сотовую сеть, для доступа с любой точки
+
+
+
+
+        include modules/components/footer
+
+script(src='js/index.js' defer)

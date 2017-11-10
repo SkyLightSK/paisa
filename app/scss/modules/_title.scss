@@ -11,4 +11,15 @@ h1{
     border-bottom: 3px solid black;
     margin: 60px 0px;
   }
+  &.none{
+    border-bottom: 0px solid black;
+    margin: 30px 0px;
+  }
+  &.top-yellow{
+    border-top: 3px solid $mainYellow;
+    border-bottom: 0px solid black;
+    margin: 30px 0px;
+    padding: 35px;
+    margin-bottom: 0px;
+  }
 }

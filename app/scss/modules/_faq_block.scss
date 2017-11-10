@@ -1,0 +1,66 @@
+
+.faq_block {
+  margin: 20px 0px;
+  .faq_block_wrapper {
+
+    .faq_item_block{
+      background-color: white;
+
+      .faq_item_title{
+
+        h3{
+          color: #282828;
+          font-family: Raleway;
+          font-size: 24px;
+          font-weight: 700;
+          padding: 20px;
+          margin: 0px;
+          position: relative;
+
+          &.droppedArrow:after{
+            transform: translate(-50%,-50%) rotateX(150deg);
+            transition: .4s;
+          }
+
+          &:after{
+            content: '';
+            background-image: url("../../img/power_supply/faq-arroe.png");
+            position: absolute;
+            width: 27px;
+            height: 15px;
+            transform: translate(-50%,-50%);
+            right: 3%;
+            top: 50%;
+            transition: .4s;
+            cursor: pointer;
+          }
+        }
+      }
+      .faq_item_description{
+
+        overflow: hidden;
+        transition: max-height .4s linear;
+        //max-height: 0px;
+
+
+
+        //&.dropped{
+        //  height: 100% ;
+        //}
+        //
+        //&.dropped_height{
+        //  max-height: 0px;
+        //}
+
+        p{
+          color: #282828;
+          font-family: "Open Sans";
+          font-size: 18px;
+          font-weight: 400;
+          padding: 20px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

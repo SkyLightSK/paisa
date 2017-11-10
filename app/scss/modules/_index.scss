@@ -494,3 +494,55 @@
         transform: scale(1);
     }
 }
+
+
+
+.consultation_button {
+    margin: 40px 0px;
+    transition: .4s;
+
+    &.rotated{
+        margin: 10px 0px;
+
+        .consultation_button_angle {
+
+            .fa-angle-double-down {
+                transform: rotateX(150deg);
+                transition: .4s;
+            }
+        }
+
+    }
+
+    .consultation_button_wrapper {
+        text-align: center;
+        a {
+            color: black;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            button {
+                border-radius: 30px;
+                border: 0px;
+                background-color: $mainYellow;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 800;
+                padding: 12px 32px;
+                margin: 50px 0px;
+                outline: none;
+
+            }
+        }
+    }
+    .consultation_button_angle {
+        text-align: center;
+        i {
+            color: $mainYellow;
+            font-size: 57px;
+            font-weight: 100;
+
+
+        }
+    }
+}

@@ -1,0 +1,188 @@
+.banner_description_block {
+  //background-image: url("../../img/background_shape.png");
+  margin: 98px 0px;
+  //height: 300px;
+  position: relative;
+  background-color: white;
+  margin-bottom: 300px;
+  margin-top: 0px;
+
+  &.design_machines_icons{
+    background-color: transparent;
+    margin: 0;
+
+    banner_description_block_wrapper:after{
+      display:none !important;
+    }
+
+    .banner_description_icon_block:after{
+      display:none !important;
+    }
+  }
+
+  .banner_description_block_wrapper {
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 148%;
+      z-index: -1;
+      position: absolute;
+      background-image: url(../../img/shape_bottom.svg);
+      //bottom: -238px;
+      background-size: contain;
+      //left: -337px;
+      background-repeat: no-repeat;
+      background-position: 0px 130px;
+    }
+
+
+    .banner_description_title {
+      position: relative;
+      text-align: center;
+
+      &:before{
+        content: '';
+        top:0px;
+        height: 67px;
+        width: 15px;
+        position: absolute;
+        background-image: url("../../img/tail.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+
+      h3 {
+        color: #000000;
+        font-family: Raleway;
+        font-size: 28px;
+        font-weight: 800;
+        margin: 0px;
+        padding: 50px 0px;
+        padding-top: 70px;
+      }
+    }
+  }
+  .banner_description_icon_block {
+
+
+    &:after{
+      content: '';
+      bottom: -323px;
+      height: 67px;
+      width: 15px;
+      position: absolute;
+      background-image: url("../../img/tail.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left:50%;
+      transform: translateY(-50%);
+    }
+
+    .banner_description_icon_block_wrapper {
+      display: flex;
+      justify-content: space-around;
+
+      .banner_description_dots_wrapper{
+        padding: 0px;
+
+
+        .banner_description_dots {
+          display: flex;
+          padding: 80px 0px;
+          .dot {
+            color: $mainYellow;
+            font-size: 45px;
+            padding: 0px;
+
+
+
+            &:first-child{
+              animation-name: dot1;
+              animation-duration: .5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+            }
+            &:nth-child(2){
+              animation-name: dot2;
+              animation-duration: .5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+            }
+            &:nth-child(3){
+              animation-name: dot3;
+              animation-duration: .5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+            }
+
+
+          }
+        }
+      }
+      .banner_description_icon_block_item {
+        &:hover{
+          .banner_description_icon_block_text{
+            opacity: 1;
+            visibility: visible;
+            p{
+
+            }
+          }
+        }
+        .banner_description_icon_wrapper{
+          border: 2px solid transparent;
+          border-radius: 50%;
+          padding: 20px;
+          &:hover {
+            border: 2px solid $mainYellow;
+            animation-name: pulse1;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+
+          }
+          .banner_description_icon_block_img {
+            border: 2px solid transparent;
+            border-radius: 50%;
+            padding: 40px;
+            text-align: center;
+
+            &:hover {
+              border: 2px solid $mainYellow;
+              animation-name: pulse1;
+              animation-duration: 0.5s;
+              animation-timing-function: linear;
+
+            }
+
+            img {
+              height: 88px;
+              width: 88px;
+            }
+          }
+        }
+        .banner_description_icon_block_title {
+          h3 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+        .banner_description_icon_block_text{
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s, opacity 0.5s linear;
+          p{
+            color: #000000;
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+          }
+        }
+      }
+
+    }
+  }
+}

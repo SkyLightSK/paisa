@@ -95,6 +95,84 @@ header {
 							right: 10px;
 						}
 					}
+
+				.header_number {
+					margin-right: 86px;
+					position: relative;
+					&:before{
+						content: "\f095";
+						color: #9e9890;
+						font-size: 18px;
+						font-weight: 100;
+						font-family: FontAwesome;
+						position: absolute;
+						left: -26px;
+						top: 13px;
+					}
+					&:after{
+						content: '';
+						position: absolute;
+						background-image: url("../../img/design_machines/arrow-down.png");
+						width: 24px;
+						height: 26px;
+						top:20px;
+						right:-28px;
+						background-repeat: no-repeat;
+						background-size: contain;
+					}
+					p{
+						color: #000000;
+						font-family: OpenSans;
+						font-size: 16px;
+						font-weight: 500
+					}
+					&:hover{
+						.header_number_droppdown_block{
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+					.header_number_droppdown_block{
+						position: absolute;
+
+						padding: 0px 7px;
+						left:-7px;
+						width: 162px;
+						background-color: white;
+						border-radius: 15px;
+						z-index: 1;
+						-webkit-box-shadow: 10px 10px 51px -10px rgba(0,0,0,0.75);
+						-moz-box-shadow: 10px 10px 51px -10px rgba(0,0,0,0.75);
+						box-shadow: 10px 10px 51px -10px rgba(0,0,0,0.75);
+
+						visibility: hidden;
+						opacity: 0;
+						transition: visibility 0s, opacity 0.5s linear;
+
+					}
+				}
+
+				.header_address{
+					position: relative;
+					&:before {
+						content: '\f041';
+						color: #a13e46;
+						font-size: 18px;
+						font-weight: 100;
+						font-family: FontAwesome;
+						position: absolute;
+						left: -26px;
+						top: 13px;
+					}
+					p{
+						color: #000000;
+						font-family: OpenSans;
+						font-size: 16px;
+						font-weight: 500;
+					}
+				}
+
+
 				}
 				.header_main_content_nav {
 					text-transform: uppercase;
@@ -102,6 +180,9 @@ header {
 					width: 100%;
 					position: relative;
 					transition: all 0.5s;
+
+
+
 					& > ul {
 						list-style-type: none;
 						padding: 0;

@@ -1,0 +1,74 @@
+.cnc_machines_scheme_block {
+  margin: 20px 0px;
+  .cnc_machines_scheme_block_wrapper {
+
+    .scheme_block {
+      padding-right: 50px;
+
+      &:after{
+        content: '';
+        background-image: url("../../img/design_machines/right-arr.png");
+        position: absolute;
+        width: 87px;
+        height: 63px;
+        top:51%;
+        right: -44px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .scheme_title {
+        text-align: center;
+        h3 {
+          color: #000000;
+          font-family: Raleway;
+          font-size: 24px;
+          font-weight: 700;
+          text-align: center;
+        }
+        img{
+          margin-bottom: 30px;
+        }
+      }
+      .scheme_img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .cnc_machine_block {
+      &:after{
+        content: '';
+        background-image: url("../../img/design_machines/left-arr.png");
+        position: absolute;
+        width: 87px;
+        height: 63px;
+        top:73%;
+        left: -44px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      padding-left: 50px;
+      .cnc_machine_title {
+        text-align: center;
+        h3 {
+          color: #000000;
+          font-family: Raleway;
+          font-size: 24px;
+          font-weight: 700;
+          text-align: center;
+
+        }
+        img{
+          margin-bottom: 30px;
+        }
+      }
+      .cnc_machine_img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

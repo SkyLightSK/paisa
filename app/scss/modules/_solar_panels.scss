@@ -1,0 +1,88 @@
+.main_solar_panel_description_block {
+  margin-top: 67px;
+  .main_solar_panel_description_block_wrapper {
+
+    .main_solar_panel_description_text {
+
+      p {
+        color: #000000;
+        font-family: OpenSans;
+        font-size: 17px;
+        font-weight: 400;
+        strong{
+          font-size: 22px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.work_steps_block {
+  .work_steps_wrapper {
+    .work_step_item {
+      margin: 20px 0px;
+      &.down_arrow:after{
+        content: '';
+        background-image: url("../../img/solar_panels/arr_step.png");
+        position: absolute;
+        width: 63px;
+        height: 87px;
+        left: 43%;
+      }
+      &.angle_arrow:after{
+        content: '';
+        background-image: url("../../img/solar_panels/angle_arr.png");
+        position: absolute;
+        width: 63px;
+        height: 87px;
+        top: 42px;
+        right: -32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .work_step_item_content {
+        position: relative;
+        .step_background_number p{
+          text-shadow: -5px 5px 5px rgba(49, 49, 49, 0.09);
+          color: #d3d3d2;
+          font-family: sans-serif;
+          font-size: 213px;
+          font-weight: 700;
+          margin: 0px;
+          text-align: center;
+        }
+
+        .step_content_block {
+          position: absolute;
+          top: 79px;
+          left: 0;
+          width: 100%;
+          .step_count {
+            h3 {
+              text-align: center;
+              color: #000000;
+              font-family: Raleway;
+              font-size: 30px;
+              font-weight: 800;
+            }
+          }
+          .step_title {
+            p {
+              text-align: center;
+              color: #020202;
+              font-family: Raleway;
+              font-size: 24px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .step_image {
+        text-align: center;
+        img {
+        }
+      }
+    }
+  }
+}

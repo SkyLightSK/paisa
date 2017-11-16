@@ -2,7 +2,7 @@
     main{
 
         .about_us_block {
-
+            margin: 48px 0px 107px 0px;
             .about_us_icons_left {
                 text-align: center;
 
@@ -43,29 +43,9 @@
 
                     &:after {
                         content: '';
-                        height: 100%;
-                        width: 554px;
-                        position: absolute;
-                        background-image: url(../../img/bottom_border.png);
-                        //bottom: -226px;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        transform: translateX(-50%);
-                        background-position: 0px 40px;
                     }
                     &:before {
                         content: '';
-                        width: 554px;
-                        height: 100%;
-                        position: absolute;
-                        background-image: url(../../img/top_border.png);
-                        background-size: contain;
-                        /* top: -286px; */
-                        background-repeat: no-repeat;
-                        bottom: 100%;
-                        background-position: center bottom;
-                        transform: translateX(-50%);
-
                     }
 
 
@@ -98,59 +78,28 @@
         }
 
         .banner_description_block {
-            //background-image: url("../../img/background_shape.png");
-            margin: 98px 0px;
-            height: 300px;
+            //height: 300px;
             position: relative;
-            background-color: white;
-            margin-bottom: 300px;
-
-
-            //.background-shape{
-            //    position: absolute;
-            //    top: -1107px;
-            //    height: 1500px;
-            //    width: 100%;
-            //    border: 630px solid blue;
-            //    border-radius: 100%;
-            //}
 
             .banner_description_block_wrapper {
 
                 &:after {
-                    content: '';
-                    width: 100%;
-                    height: 148%;
-                    z-index: -1;
-                    position: absolute;
-                    background-image: url(../../img/shape_bottom.svg);
-                    //bottom: -238px;
-                    background-size: contain;
-                    //left: -337px;
-                    background-repeat: no-repeat;
-                    background-position: 0px 130px;
+
                 }
                 &:before {
-                    content: '';
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    background-image: url(../../img/shape_top.svg);
-                    background-size: contain;
-                    /* top: -286px; */
 
-                    background-repeat: no-repeat;
-                    bottom: 100%;
-                    background-position: center bottom;
                 }
 
+                .banner_description_block_content{
+                    background-color: white;
+                }
                 .banner_description_title {
                     position: relative;
                     text-align: center;
 
                     &:before{
                         content: '';
-                        top:-22px;
+                        top:-19px;
                         height: 67px;
                         width: 15px;
                         position: absolute;
@@ -163,10 +112,11 @@
                     h3 {
                         color: #000000;
                         font-family: Raleway;
-                        font-size: 28px;
+                        font-size: 30px;
                         font-weight: 800;
                         margin: 0px;
                         padding: 50px 0px;
+                        padding-top: 80px;
                     }
                 }
             }
@@ -175,7 +125,7 @@
 
                 &:after{
                     content: '';
-                    bottom: -302px;
+                    bottom: -64px;
                     height: 67px;
                     width: 15px;
                     position: absolute;
@@ -228,7 +178,7 @@
                         }
                     }
                     .banner_description_icon_block_item {
-
+                        //display: flex;
                         //&:not(:first-child):before{
                         //    content: '•••';
                         //}
@@ -343,7 +293,7 @@
                 height: 300px;
                 transition: height 1s linear;
                 //transition: background .1s linear;
-
+                margin-top: 69px;
 
 
             }

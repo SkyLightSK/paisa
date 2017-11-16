@@ -1,12 +1,27 @@
 .banner_description_block {
   //background-image: url("../../img/background_shape.png");
-  margin: 98px 0px;
+  //margin: 98px 0px;
   //height: 300px;
   position: relative;
-  background-color: white;
-  margin-bottom: 300px;
-  margin-top: 0px;
+  //background-color: white;
+  //margin-bottom: 300px;
+  //margin-top: 0px;
+  .shape_arc{
+   width: 100%;
+    display: block;
 
+    &.top{
+      position: absolute;
+      top: -280px;
+    }
+    &.bottom{
+
+    }
+
+  }
+  .banner_description_block_content{
+    background-color: white;
+  }
   &.design_machines_icons{
     background-color: transparent;
     margin: 0;
@@ -24,16 +39,7 @@
 
     &:after {
       content: '';
-      width: 100%;
-      height: 148%;
-      z-index: -1;
-      position: absolute;
-      background-image: url(../../img/shape_bottom.svg);
-      //bottom: -238px;
-      background-size: contain;
-      //left: -337px;
-      background-repeat: no-repeat;
-      background-position: 0px 130px;
+
     }
 
 
@@ -43,7 +49,7 @@
 
       &:before{
         content: '';
-        top:0px;
+        top:-22px;
         height: 67px;
         width: 15px;
         position: absolute;
@@ -69,7 +75,7 @@
 
     &:after{
       content: '';
-      bottom: -323px;
+      bottom: -64px;
       height: 67px;
       width: 15px;
       position: absolute;

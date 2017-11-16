@@ -435,6 +435,7 @@ main {
 @import 'modules/manufacturing_products';
 @import 'modules/cnc_machines';
 @import 'modules/design_machines';
+@import 'modules/callback_form';
 
 @import 'modules/footer';
 @import 'modules/general';
@@ -443,9 +444,9 @@ main {
  ==========================================================================
  */
 /* на момент разработки*/
-html, body {
-  overflow-x: hidden;
-}
+//html, body {
+//  overflow-x: hidden;
+//}
 /* на момент разработки*/
 
 * {
@@ -461,7 +462,7 @@ body {
   font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
-  background-image: radial-gradient(circle 1050px at center, rgba(255, 255, 255, 0.5) 0%, rgba(158, 152, 144, 0.5) 100%);
+  background-image: radial-gradient(circle 1050px at center, rgba(255, 255, 255, 0.3) 0%, rgba(158, 152, 144, 0.3) 100%);
 
     
 

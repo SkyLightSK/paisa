@@ -33,32 +33,36 @@ html(lang='en')
 										h3= title[val]
 										img(src="img/" + img[val] + ".png")
 
+
 			.banner_description_block
+				include modules/main/shape_top.svg
+				.banner_description_block_content
+					.banner_description_block_wrapper
+						.banner_description_title
+							h3 ПАИСА ЭТО
 
-				.banner_description_block_wrapper
-					.banner_description_title
-						h3 ПАИСА ЭТО
+					.banner_description_icon_block
+						.container
+							.row
+								.banner_description_icon_block_wrapper
+									-var icons = ["like","-------2","customer--1-","safety","hand"];
+									-var title = ["Просто","Актуально","Индивидуально","Стабильно","Аккуратно"];
+									each val in [0,1,2,3,4]
+										-if(val!=0)
+											.col-lg-4.banner_description_dots_wrapper
+												.banner_description_dots
+													.col-lg-4.dot •
+													.col-lg-4.dot •
+													.col-lg-4.dot •
 
-				.banner_description_icon_block
-					.container
-						.row
-							.banner_description_icon_block_wrapper
-								-var icons = ["like","-------2","customer--1-","safety","hand"];
-								-var title = ["Просто","Актуально","Индивидуально","Стабильно","Аккуратно"];
-								each val in [0,1,2,3,4]
-									-if(val!=0)
-										.col-lg-4.banner_description_dots_wrapper
-											.banner_description_dots
-												.col-lg-4.dot •
-												.col-lg-4.dot •
-												.col-lg-4.dot •
+										.banner_description_icon_block_item.col-lg-10
+											.banner_description_icon_wrapper
+												.banner_description_icon_block_img
+													img(src="img/icons/" + icons[val] + ".png")
+											.banner_description_icon_block_title
+												h3=title[val]
+				include modules/main/shape_bottom.svg
 
-									.banner_description_icon_block_item.col-lg-10
-										.banner_description_icon_wrapper
-											.banner_description_icon_block_img
-												img(src="img/icons/"+icons[val]+".png")
-										.banner_description_icon_block_title
-											h3=title[val]
 
 			form(class="form-horizontal")
 				.container

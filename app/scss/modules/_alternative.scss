@@ -1,4 +1,68 @@
+.alternative{
+
+  .banner_description_block {
+    margin-bottom: 276px;
+
+    .shape_arc {
+      width: 100%;
+      display: block;
+
+      &.top {
+        position: absolute;
+        top: -280px;
+        z-index: -1;
+      }
+      &.bottom {
+        position: absolute;
+        bottom: -229px;
+        z-index: -1;
+      }
+
+    }
+    .banner_description_block_content {
+      .banner_description_block_wrapper {
+        .banner_description_title {
+          &:before {
+
+          }
+          h3 {
+
+          }
+        }
+      }
+
+      .banner_description_icon_block {
+        &:before{
+          top:-19px;
+        }
+        &:after {
+          bottom: -295px;
+        }
+        .callback_form {
+          //padding: 0px 234px;
+        }
+      }
+    }
+  }
+}
+
+
+.about_alternative_energy_block {
+  .banner_description_title{
+    h3{
+      padding-top: 90px!important;
+      text-transform: uppercase;
+    }
+    &:before{
+      top:-1px!important;
+    }
+  }
+}
+
+
 .alternative_main_description_block{
+
+
   .title{
 
     h1{
@@ -281,10 +345,34 @@
   z-index: 2;
 }
 
+.slick-prev {
+  left: 36%;
+  top: 64px;
+}
+.slick-next {
+  right: 55%;
+  /* bottom: -76px; */
+  top: 95%;
+}
+
 .slick-prev:before{
   content: '';
   background-image: url("../../img/arrow.png");
   background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 34px;
+}
+.slick-next:before{
+  content: '';
+  background-image: url("../../img/arrow.png");
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 34px;
+  transform: rotate(180deg);
 }
 
 .slick-prev:before, .slick-next:before{

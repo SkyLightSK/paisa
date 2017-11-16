@@ -5,9 +5,9 @@ $(document).ready( function () {
     $('.dropdown_button, .fa-angle-double-down').click( function () {
 
         $('.form-horizontal').toggleClass('dropped');
-        $('.form-horizontal').fadeToggle('slow');
+        $('.form-horizontal').fadeToggle(1);
 
-        $('.consultation_button_wrapper').fadeToggle('fast');
+        $('.consultation_button_wrapper').fadeToggle(1);
 
         $('.consultation_button').toggleClass('rotated');
     })

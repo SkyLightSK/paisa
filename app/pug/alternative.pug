@@ -73,31 +73,32 @@ html(lang='en')
 
             .about_alternative_energy_block
                 .banner_description_block
+                    .banner_description_block_content
+                        .banner_description_block_wrapper
+                            .banner_description_title
+                                h3 Альтернативная энергия ЭТО
 
-                    .banner_description_block_wrapper
-                        .banner_description_title
-                            h3 ПАИСА ЭТО
+                        .banner_description_icon_block
+                            .container
+                                .row
+                                    .banner_description_icon_block_wrapper
+                                        -var icons = ["-------2","money","plug" ];
+                                        -var title = ["Универсально","Экономно","Экологично"];
+                                        each val in [0,1,2]
+                                            -if(val!=0)
+                                                .col-lg-4.banner_description_dots_wrapper
+                                                    .banner_description_dots
+                                                        .col-lg-4.dot •
+                                                        .col-lg-4.dot •
+                                                        .col-lg-4.dot •
 
-                    .banner_description_icon_block
-                        .container
-                            .row
-                                .banner_description_icon_block_wrapper
-                                    -var icons = ["like","-------2","customer--1-","safety","hand"];
-                                    -var title = ["Просто","Актуально","Индивидуально","Стабильно","Аккуратно"];
-                                    each val in [0,1,2]
-                                        -if(val!=0)
-                                            .col-lg-4.banner_description_dots_wrapper
-                                                .banner_description_dots
-                                                    .col-lg-4.dot •
-                                                    .col-lg-4.dot •
-                                                    .col-lg-4.dot •
-
-                                        .banner_description_icon_block_item.col-lg-10
-                                            .banner_description_icon_wrapper
-                                                .banner_description_icon_block_img
-                                                    img(src="img/icons/" + icons[val] + ".png")
-                                            .banner_description_icon_block_title
-                                                h3=title[val]
+                                            .banner_description_icon_block_item.col-lg-10
+                                                .banner_description_icon_wrapper
+                                                    .banner_description_icon_block_img
+                                                        img(src="img/icons/" + icons[val] + ".png")
+                                                .banner_description_icon_block_title
+                                                    h3=title[val]
+                    include modules/main/shape_bottom.svg
 
 
             .faq_block

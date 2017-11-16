@@ -16,7 +16,17 @@ html(lang='en')
             .sprut_block
                 .sprut_block_wrapper
                     .sprut_block_img_wrapper
-                        img(src='img/kraken.png')
+
+                        img.sprut_block_img_circle_kraken(src="img/kraken.png")
+                        .sprut_block_img_circle_block
+                            -var spruTitle = ['Температура','Освещение','Пожарная безопастность','Пожарная безопастность','Охрана','Технологическое оборудование']
+                            each val,index in ['temp','lamp','fireout','camera','zm','pun']
+                                .sprut_block_img_item
+                                    .sprut_block_title
+                                        h3= spruTitle[index]
+                                    img.sprut_block_img( src= 'img/remote_control/' + val + '.png')
+
+
             .container
                 +title('ЧТО ПОЗВОЛЯЕТ СИСТЕМА «СПРУТ»',"yellow")
 

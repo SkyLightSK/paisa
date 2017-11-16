@@ -1,4 +1,52 @@
 .manufacturing_products {
+
+    .banner_description_block {
+      margin-bottom: 276px;
+
+      .shape_arc {
+        width: 100%;
+        display: block;
+
+        &.top {
+          position: absolute;
+          top: -280px;
+          z-index: -1;
+        }
+        &.bottom {
+          position: absolute;
+          bottom: -229px;
+          z-index: -1;
+        }
+
+      }
+      .banner_description_block_content {
+        .banner_description_block_wrapper {
+          .banner_description_title {
+            &:before {
+
+            }
+            h3 {
+
+            }
+          }
+        }
+
+        .banner_description_icon_block {
+          &:before{
+            top:-19px;
+          }
+          &:after {
+            bottom: -295px;
+          }
+          .callback_form {
+            //padding: 0px 234px;
+          }
+        }
+      }
+    }
+
+
+
   .my-container {
     width: 750px;
     margin: 0px auto;
@@ -66,7 +114,7 @@
   }
 
   .main_manufacturing_products_block {
-
+    margin-bottom: 100px;
     .manufacturing_products_title{
       text-align: center;
       h3{
@@ -80,7 +128,7 @@
     }
 
     .main_manufacturing_products_block_wrapper {
-      .row {
+      .manufacturing_products_row {
         display: flex;
         flex-wrap: wrap;
       }

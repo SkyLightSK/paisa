@@ -2,12 +2,92 @@
   .sprut_block_wrapper {
     text-align: center;
     .sprut_block_img_wrapper {
-      img {
+      position: relative;
+      .sprut_block_img_circle_kraken {
+          position: absolute;
+          width: 393px;
+          height: 394px;
+          top: 50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+        }
+      
+      .sprut_block_img_circle_block {
+        position: relative;
+        width: 541px;
+        height: 541px;
+        margin: 0px auto;
+        border-radius: 50%;
+        border: 2px solid $mainYellow;
+        animation: sprutAnimation 10s linear infinite;
+        &:hover {
+          animation-play-state: paused;
+          .sprut_block_img_item {
+            animation-play-state: paused;
+            .sprut_block_title{
+              animation-play-state: paused;
+              h3 {
+                animation-play-state: paused;
+              }
+            }
+          }
+        }
+        
+        @keyframes sprutAnimation {
+          100% { transform: rotate(360deg); }
+        }
+        .sprut_block_img_item {
+          position: absolute;
+          animation: sprutAnimation 10s reverse linear infinite;
+          .sprut_block_title{
+            position: absolute;
+            animation: sprutAnimation 10s linear infinite;
+            transform-origin: 125px 50%;
+            h3 {
+              animation: sprutAnimation 10s linear reverse infinite;
+            }
+          }
+          .sprut_block_img{
+            //position: absolute;
+          }
+          &:nth-child(1) {
+            top: 10px;
+            left: 75px;
 
+            .sprut_block_title {
+              h3 {
+                margin: 0;
+              }
+              top: 30.5px;
+              left: -125px;
+            }
+          }
+          &:nth-child(2) {
+            top: 217px;
+            left: -41px;
+          }
+          &:nth-child(3) {
+            bottom: 87px;
+            left: 76px;
+          }
+          &:nth-child(4) {
+            top: 10px;
+            right: 147px;
+          }
+          &:nth-child(5) {
+            top: 240px;
+            right: 39px;
+          }
+          &:nth-child(6) {
+            bottom: 80px;
+            right: 163px;
+          }
+        }
       }
     }
   }
 }
+
 
 .system_sprut_description_block{
 
@@ -24,6 +104,7 @@
 
       .system_sprut_item_image_wrapper {
         text-align: center;
+
 
         img{
 

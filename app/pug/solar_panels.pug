@@ -23,8 +23,8 @@ html(lang='en')
 
 
             .main_solar_panel_description_block
-                .row
-                    .container
+                .container
+                    .row
                         .main_solar_panel_description_block_wrapper
                             .col-lg-4
                                 .main_solar_panel_description_image
@@ -43,8 +43,8 @@ html(lang='en')
             +title("КАК ВСЕ ПРОИСХОДИТ?","top-yellow")
             .work_steps_block
                 .work_steps_wrapper
-                    .row
-                        .container
+                    .container
+                        .row
                             -var imgList = ["step1","step2","step3","step4","step5","step6"]
                             -var titleList = ["Выезд на объект заказчика","Составление проекта","Монтаж, установка и пусконаладочные работы","Определение номинальной мощности  и электропотребления","Определение комплектации для монтажа установки","Сдача объекта заказчику"]
                             -for(var counter=0;counter<imgList.length;counter++)
@@ -64,30 +64,35 @@ html(lang='en')
 
 
             .banner_description_block
-                .banner_description_block_wrapper
-                    .banner_description_title
-                        h3 ПАИСА ЭТО
+                .banner_description_block_content
 
-                .banner_description_icon_block
-                    .container
-                        .row
-                            .banner_description_icon_block_wrapper
-                                -var icons = ["like","-------2","customer--1-","safety","hand"];
-                                -var title = ["Просто","Актуально","Индивидуально","Стабильно","Аккуратно"];
-                                each val in [0,1,2]
-                                    -if(val!=0)
-                                        .col-lg-4.banner_description_dots_wrapper
-                                            .banner_description_dots
-                                                .col-lg-4.dot •
-                                                .col-lg-4.dot •
-                                                .col-lg-4.dot •
+                    .banner_description_block_wrapper
+                        .banner_description_title
+                            h3 ПАИСА ЭТО
 
-                                    .banner_description_icon_block_item.col-lg-10
-                                        .banner_description_icon_wrapper
-                                            .banner_description_icon_block_img
-                                                img(src="img/icons/" + icons[val] + ".png")
-                                        .banner_description_icon_block_title
-                                            h3=title[val]
+                    .banner_description_icon_block
+                        .container
+                            .row
+                                .banner_description_icon_block_wrapper
+                                    -var icons = ["-------2","money","plug" ];
+                                    -var title = ["Универсально","Экономно","Экологично"];
+                                    each val in [0,1,2]
+                                        -if(val!=0)
+                                            .col-lg-4.banner_description_dots_wrapper
+                                                .banner_description_dots
+                                                    .col-lg-4.dot •
+                                                    .col-lg-4.dot •
+                                                    .col-lg-4.dot •
+
+                                        .banner_description_icon_block_item.col-lg-10
+                                            .banner_description_icon_wrapper
+                                                .banner_description_icon_block_img
+                                                    img(src="img/icons/" + icons[val] + ".png")
+                                            .banner_description_icon_block_title
+                                                h3=title[val]
+                                            .banner_description_icon_block_text
+                                                p Возможность пользоваться бесплатной и неисчерпаемой энергией ветра и солнца и не завесить от электросети
+                include modules/main/shape_bottom.svg
 
 
 

@@ -24,7 +24,7 @@ html(lang='en')
                         h3 На станке ЧПУ (числовое программное управление) в зависимости от количества рабочих осей  можно изготавливать следующую продукцию:
 
                     .main_manufacturing_products_block_wrapper
-                        .row
+                        .row.manufacturing_products_row
 
                             -var textList = ["Гравировка надписей, фигурная роспись сувенирной продукции, изготовление шкатулок, подставок под фотографии, декоративных светильников и т.д.","Обработка с высокой точностью деталей в проекции 2D ","Изготовление печатных плат для радиоаппаратуры","Лазерная гравировка сложных рисунков, и лазерная резка","Резка рельефных картин и фотографий 2,5D","Сверление радиотехнических плат, шаблонов, пуансонов и т.д."]
 
@@ -40,33 +40,35 @@ html(lang='en')
                                                     p= textList[counter]
 
             .banner_description_block
+                include modules/main/shape_top.svg
+                .banner_description_block_content
+                    .banner_description_block_wrapper
+                        .banner_description_title
+                            h3 НАШИ РАБОТЫ
 
-                .banner_description_block_wrapper
-                    .banner_description_title
-                        h3 НАШИ РАБОТЫ
-
-                .banner_description_icon_block
-                    .container
-                        .row
-                            .my-container
-                                .slider-container
-                                    .slider.slider-1
-                                        each val in [1,2,3,4]
-                                            .featured-slide.featured-slide-1
-                                                -if(val==1 || val==3)
-                                                    img(src="img/manufacturing_products/slide.png")
-                                                -if(val==2 || val==4)
-                                                    img(src="img/manufacturing_products/slide2.png")
-
-                                .slider-nav-container
-                                    .wrapper
-                                        .slider-nav.slider-nav-1
+                    .banner_description_icon_block
+                        .container
+                            .row
+                                .my-container
+                                    .slider-container
+                                        .slider.slider-1
                                             each val in [1,2,3,4]
-                                                .slide-link.slide-link-1
+                                                .featured-slide.featured-slide-1
                                                     -if(val==1 || val==3)
                                                         img(src="img/manufacturing_products/slide.png")
                                                     -if(val==2 || val==4)
                                                         img(src="img/manufacturing_products/slide2.png")
+
+                                    .slider-nav-container
+                                        .wrapper
+                                            .slider-nav.slider-nav-1
+                                                each val in [1,2,3,4]
+                                                    .slide-link.slide-link-1
+                                                        -if(val==1 || val==3)
+                                                            img(src="img/manufacturing_products/slide.png")
+                                                        -if(val==2 || val==4)
+                                                            img(src="img/manufacturing_products/slide2.png")
+                include modules/main/shape_bottom.svg
 
 
 

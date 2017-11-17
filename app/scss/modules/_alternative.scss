@@ -11,6 +11,7 @@
         position: absolute;
         top: -280px;
         z-index: -1;
+        display: none;
       }
       &.bottom {
         position: absolute;
@@ -182,19 +183,17 @@
     }
     .sun_battery_button {
       a {
-        color: black;
-        button {
-          border-radius: 25px;
-          background-color: #fac51d;
-          color: #000000;
-          font-family: Raleway;
-          font-size: 16px;
-          font-weight: 700;
-          text-transform: uppercase;
-          border: none;
-          padding: 10px 40px;
+        border-radius: 25px;
+        background-color: #fac51d;
+        color: #000000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        padding: 10px 40px;
 
-        }
+
       }
     }
   }
@@ -298,17 +297,15 @@
     .air_energy_button {
       a {
         color: black;
-        button {
-          border-radius: 25px;
-          background-color: #fac51d;
-          color: #000000;
-          font-family: Raleway;
-          font-size: 16px;
-          font-weight: 700;
-          text-transform: uppercase;
-          border: none;
-          padding: 10px 40px;
-        }
+        border-radius: 25px;
+        background-color: #fac51d;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        padding: 10px 40px;
+
       }
     }
   }
@@ -357,7 +354,7 @@
 
 .slick-prev:before{
   content: '';
-  background-image: url("../../img/arrow.png");
+  background-image: url("../img/arrow.png");
   background-size: contain;
   position: absolute;
   background-repeat: no-repeat;
@@ -366,7 +363,7 @@
 }
 .slick-next:before{
   content: '';
-  background-image: url("../../img/arrow.png");
+  background-image: url("../img/arrow.png");
   background-size: contain;
   position: absolute;
   background-repeat: no-repeat;

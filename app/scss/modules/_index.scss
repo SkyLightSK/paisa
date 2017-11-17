@@ -1,5 +1,5 @@
 .main_page{
-    main{
+
 
         .about_us_block {
             margin: 48px 0px 107px 0px;
@@ -103,7 +103,7 @@
                         height: 67px;
                         width: 15px;
                         position: absolute;
-                        background-image: url("../../img/tail.png");
+                        background-image: url("../img/tail.png");
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
@@ -129,7 +129,7 @@
                     height: 67px;
                     width: 15px;
                     position: absolute;
-                    background-image: url("../../img/tail.png");
+                    background-image: url("../img/tail.png");
                     background-size: contain;
                     background-repeat: no-repeat;
                     left:50%;
@@ -300,7 +300,7 @@
 
             .form-group{
 
-                input, textarea{
+                input:not([type="submit"]), textarea{
                     width: 100%;
                     border: 2px solid #7c7c7c;
                     border-radius: 25px;
@@ -360,7 +360,7 @@
 
 
     }
-}
+
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes dot1 {

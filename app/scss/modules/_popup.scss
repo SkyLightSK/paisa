@@ -1,0 +1,52 @@
+.cover{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#contactForm {
+
+  z-index: 2;
+  display: none;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 507px;
+  height: 317px;
+  border-radius: 20px;
+  background-color: #ffffff;
+
+    .form-group {
+      width: 333px;
+      text-align: center;
+      position: relative;
+      margin: 0px auto;
+
+      h3{
+        color: #000000;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      input {
+        width: 333px;
+        height: 41px;
+        border-radius: 5px;
+        border: 1px solid #888888;
+        margin: 5px 0px;
+
+
+        &[type="submit"] {
+          border-radius: 19px;
+          padding: 0px 13px;
+          margin: 10px 0px;
+        }
+      }
+    }
+
+}

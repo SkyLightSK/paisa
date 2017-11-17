@@ -8,7 +8,7 @@
 
   .form-group{
 
-    input, textarea, select{
+    input:not([type="submit"]), textarea, select{
       width: 100%;
       border: 2px solid #7c7c7c;
       border-radius: 25px;
@@ -80,17 +80,19 @@
 
       color: black;
 
-      input[type="submit"] {
-        border-radius: 30px;
-        border: 0px;
-        background-color: $mainYellow;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 800;
-        padding: 12px 55px;
-        margin: 42px 0px;
-        width: 239px;
-      }
+  }
 
+}
+
+form{
+  input[type="submit"] {
+    border-radius: 30px;
+    border: 0px;
+    background-color: $mainYellow;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 55px;
+    margin: 42px 0px;
   }
 }

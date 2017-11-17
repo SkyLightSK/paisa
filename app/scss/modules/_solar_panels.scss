@@ -72,7 +72,7 @@
       margin: 20px 0px;
       &.down_arrow:after{
         content: '';
-        background-image: url("../../img/solar_panels/arr_step.png");
+        background-image: url("../img/solar_panels/arr_step.png");
         position: absolute;
         width: 63px;
         height: 87px;
@@ -80,7 +80,7 @@
       }
       &.angle_arrow:after{
         content: '';
-        background-image: url("../../img/solar_panels/angle_arr.png");
+        background-image: url("../img/solar_panels/angle_arr.png");
         position: absolute;
         width: 63px;
         height: 87px;

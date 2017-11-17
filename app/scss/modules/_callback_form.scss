@@ -44,10 +44,10 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      background: transparent url("../../img/design_machines/arrow-down.png") no-repeat 265px 16px;
+      background: transparent url("../img/design_machines/arrow-down.png") no-repeat 265px 16px;
 
       &:focus{
-        background: transparent url("../../img/design_machines/full_ark_top.png") no-repeat 276px 6px;
+        background: transparent url("../img/design_machines/full_ark_top.png") no-repeat 276px 6px;
       }
     }
 
@@ -77,11 +77,10 @@
 
     }
 
-    a{
 
       color: black;
 
-      button[type="submit"] {
+      input[type="submit"] {
         border-radius: 30px;
         border: 0px;
         background-color: $mainYellow;
@@ -89,8 +88,9 @@
         font-size: 16px;
         font-weight: 800;
         padding: 12px 55px;
-        margin: 50px 0px;
+        margin: 42px 0px;
+        width: 239px;
       }
-    }
+
   }
 }

@@ -1,4 +1,5 @@
 .sprut_block {
+  padding: 150px 0;
   .sprut_block_wrapper {
     text-align: center;
     .sprut_block_img_wrapper {
@@ -16,7 +17,7 @@
         position: relative;
         width: 541px;
         height: 541px;
-        margin: 0px auto;
+        margin: 0 auto;
         border-radius: 50%;
         border: 2px solid $mainYellow;
         animation: sprutAnimation 10s linear infinite;
@@ -42,45 +43,84 @@
           .sprut_block_title{
             position: absolute;
             animation: sprutAnimation 10s linear infinite;
-            transform-origin: 125px 50%;
             h3 {
+              margin: 0;
               animation: sprutAnimation 10s linear reverse infinite;
             }
-          }
-          .sprut_block_img{
-            //position: absolute;
           }
           &:nth-child(1) {
             top: 10px;
             left: 75px;
-
             .sprut_block_title {
-              h3 {
-                margin: 0;
-              }
               top: 30.5px;
               left: -125px;
+              transform-origin: 168.69px 50%;
+              animation-delay: -1.47s;
+              h3 {
+                animation-delay: -1.47s;
+              }
             }
           }
           &:nth-child(2) {
             top: 217px;
             left: -41px;
+            .sprut_block_title {
+              top: 30.5px;
+              left: -117.15px;
+              transform-origin: 156.66px 50%;
+            }
           }
           &:nth-child(3) {
-            bottom: 87px;
-            left: 76px;
+            bottom: 10px;
+            left: 75px;
+            .sprut_block_title {
+              top: 18px;
+              right: 107px;
+              transform-origin: 183.05px 50%;
+              animation-delay: -8.53s;
+              h3 {
+                animation-delay: -8.53s;
+              }
+            }
           }
           &:nth-child(4) {
             top: 10px;
-            right: 147px;
+            right: 75px;
+            .sprut_block_title {
+              top: 28.5px;
+              right: 107px;
+              transform-origin: 214.94px 50%;
+              animation-delay: -3.53s;
+              h3 {
+                animation-delay: -3.53s;
+              }
+            }
           }
           &:nth-child(5) {
-            top: 240px;
-            right: 39px;
+            top: 222px;
+            right: -41px;
+            .sprut_block_title {
+              left: -84.16px;
+              top: 29px;
+              transform-origin: 123.69px 50%;
+              animation-delay: -5s;
+              h3 {
+                animation-delay: -5s;
+              }
+            }
           }
           &:nth-child(6) {
-            bottom: 80px;
-            right: 163px;
+            bottom: 10px;
+            right: 75px;
+            .sprut_block_title {
+              top: 18px;
+              right: 107px;
+              transform-origin: 200.52px 50%;
+              animation-delay: -6.47s;
+              h3 {
+                animation-delay: -6.47s;
+              }
+            }
           }
         }
       }

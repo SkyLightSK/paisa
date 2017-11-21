@@ -7,6 +7,14 @@ $('.slider-1').slick({
     asNavFor: '.slider-nav-1',
     fade: true,
     autoplay: true,
+    responsive: [
+        {
+            breakpoint: 1250,
+            settings: {
+                arrows:false
+            }
+        }
+    ]
 });
 
 $('.slider-nav-1').slick({

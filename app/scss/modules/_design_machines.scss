@@ -117,3 +117,36 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .design_machines .banner_description_block .banner_description_icon_block .callback_form{
+    padding: 0px;
+  }
+
+  .cnc_machines_scheme_block .cnc_machines_scheme_block_wrapper .scheme_block{
+    padding: 0px;
+  }
+
+  .cnc_machines_scheme_block .cnc_machines_scheme_block_wrapper .scheme_block .scheme_title img{
+    display: none;
+  }
+
+  .cnc_machines_scheme_block .cnc_machines_scheme_block_wrapper .cnc_machine_block .cnc_machine_title img{
+    display: none;
+  }
+  .cnc_machines_scheme_block .cnc_machines_scheme_block_wrapper .cnc_machine_block{
+    padding: 0px;
+  }
+  .cnc_machines_scheme_block .cnc_machines_scheme_block_wrapper .scheme_block:after{
+    display: none;
+  }
+  .cnc_machines_scheme_block .cnc_machines_scheme_block_wrapper .cnc_machine_block:after{
+    display: none;
+  }
+  #select3{
+    margin-bottom: 10px;
+  }
+  .work_steps_block .work_steps_wrapper .work_step_item.angle_arrow:after{
+    display: none;
+  }
+}

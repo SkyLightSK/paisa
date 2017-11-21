@@ -1,8 +1,23 @@
 .main_page{
 
 
-        .about_us_block {
+                                                                                                                                                                                                         .about_us_block {
             margin: 48px 0px 107px 0px;
+
+            .about_us_icons_left_item,.about_us_icons_right_item{
+
+                img{
+                    -webkit-transition: all 0.5s linear;
+                    transition: all 0.5s linear;
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+                &:hover img{
+                    -webkit-transform: scale3d(1.2, 1.2, 1);
+                    transform: scale3d(1.2, 1.2, 1);
+                }
+            }
+
             .about_us_icons_left {
                 text-align: center;
 
@@ -64,7 +79,7 @@
                     .center_about_us_description_text {
                         text-align: center;
                         p{
-                            width: 356px;
+                            //width: 356px;
                             text-align: left;
                             margin: 0px auto;
                             font-size: 18px;
@@ -494,5 +509,14 @@
 
 
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    banner_description_icon_block{
+        overflow-x: scroll;
+    }
+    .main_page .form-horizontal.dropped {
+        height: 485px;
     }
 }

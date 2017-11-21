@@ -162,4 +162,30 @@
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .main_manufacturing_products_block .main_manufacturing_products_block_wrapper .main_manufacturing_products_item .manufacturing_products_list_number h3{
+      border-right:none ;
+      border-bottom:1px solid $mainYellow ;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .main_manufacturing_products_block .manufacturing_products_title h3{
+      width: auto;
+    }
+    .my-container{
+      width: 100%;
+      height: auto;
+    }
+    .slider-container .slider img{
+      width: 100%;
+      height: auto;
+    }
+    .slider-nav-container .slide-link img{
+      height: auto;
+    }
+  }
 }
+

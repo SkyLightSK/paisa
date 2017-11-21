@@ -80,6 +80,30 @@
           line-height: 28px;
         }
       }
+      .cnc_machines_list_button{
+        text-align: center;
+        a{
+          border-radius: 25px;
+          background-color: #fac51d;
+          padding: 10px 25px;
+          color:black;
+          font-size: 16px;
+          display: inline-block;
+          font-weight: 700;
+          margin: 20px 0px;
+        }
+      }
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+  .main_cnc_machines_block .main_cnc_machines_block_wrapper .main_cnc_machines_item .cnc_machines_list_image img{
+    height: auto;
+  }
+
+  textarea{
+    margin-top: 10px;
+  }
+
 }

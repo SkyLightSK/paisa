@@ -399,13 +399,13 @@ $mainYellow: #fac51d;
 
 
 main {
-  padding-top: 140px;
+  padding-top: 250px;   
 }
 .main_page {
   background-color: $twoColorBackground;
   main {
-    padding-top: 140;
-  }
+
+    }
 }
 
 /* libs
@@ -417,6 +417,7 @@ main {
 @import '../libs/slick-1.6.0/slick/slick.scss';
 @import '../libs/slick-1.6.0/slick/slick-theme.scss';
 @import '../libs/animate/animate';
+@import '../libs/lightbox2/css/lightbox.scss';
 //@import 'modules/typo';
 
 /* modules
@@ -465,7 +466,13 @@ body {
   font-style: normal;
   background-image: radial-gradient(circle 1050px at center, rgba(255, 255, 255, 0.3) 0%, rgba(158, 152, 144, 0.3) 100%);
 
-    
-
 }
 
+a{
+  color: black !important;
+  text-underline: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}

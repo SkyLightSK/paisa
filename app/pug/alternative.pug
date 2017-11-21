@@ -59,14 +59,17 @@ html(lang='en')
                                         a(href="#") ПОДРОБНЕЕ
 
                                 .air_energy_image_wrap
-                                    .air_energy_image
-                                        img(src="img/alternative/windmill.png")
+                                    .air_energy_top
+                                        img(src="img/alternative/вертушка.png")
+                                    .air_energy_platform
+                                        img(src="img/alternative/ножка.png")
 
 
 
                         .vertical_slider.col-lg-2
                             each val in [1,2,3,4,5,1]
-                                img(src="img/alternative/house"+ val +".png", alt="")
+                                a(href="img/alternative/house"+ val +".png", data-lightbox="roadtrip")
+                                    img(src="img/alternative/house"+ val +".png", alt="")
 
 
             .about_alternative_energy_block

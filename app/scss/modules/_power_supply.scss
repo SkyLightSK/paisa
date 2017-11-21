@@ -78,3 +78,22 @@
   }
 }
 
+
+@media screen and (max-width: 600px) {
+  .main_banner_title_block .main_banner_title .main_banner_title_text h1{
+    font-size: 19px;
+  }
+  .main_power_supply_description_block .main_power_supply_description_block_wrapper .main_power_supply_description_text p{
+    margin: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main_banner_title_block .main_banner_title .main_banner_title_text h1{
+    font-size: 19px;
+  }
+  .main_power_supply_description_block .main_power_supply_description_block_wrapper .main_power_supply_description_block_title h3{
+    width: auto;
+
+  }
+}

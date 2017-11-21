@@ -13,6 +13,7 @@
     &.top{
       position: absolute;
       top: -280px;
+      z-index: -1;
     }
     &.bottom{
 
@@ -89,6 +90,7 @@
     .banner_description_icon_block_wrapper {
       display: flex;
       justify-content: space-around;
+
 
       .banner_description_dots_wrapper{
         padding: 0px;
@@ -191,4 +193,10 @@
 
     }
   }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner_description_block .banner_description_icon_block .banner_description_icon_block_wrapper{
+        overflow-x: scroll;
+    }
 }

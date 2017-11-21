@@ -137,7 +137,7 @@
         z-index: 1;
         left: 62px;
         top: -69px;
-
+        transform-origin: 77px 68px;
         //@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
         @keyframes rotation {
           0% {-webkit-transform:rotate(0deg);
@@ -311,11 +311,39 @@
   }
   .air_energy_image_wrap {
     position: relative;
-    .air_energy_image {
+
+    .air_energy_top {
+      position: absolute;
+      right: -6px;
+      z-index: 3;
+      top: -324px;
+
       img {
+        animation: rotation 10s linear infinite;
+        transform-origin: 101px 116px;
+        z-index: 1;
+      }
+      &:after{
+        content: '';
+        left: 0px;
+        top: 0px;
         position: absolute;
-        top: -300px;
-        right: 0px;
+        width: 188px;
+        height: 208px;
+        background-image: url("../img/alternative/тень.png");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        animation: rotation 10s linear infinite;
+        transform-origin: 105px 112px;
+        z-index: -1;
+      }
+    }
+    .air_energy_platform {
+      position: absolute;
+      right: 68px;
+      top: -210px;
+      img {
+        z-index: 2;
       }
     }
   }
@@ -376,4 +404,50 @@
   font-size: 64px;
   font-weight: 100;
   font-family: FontAwesome;
+}
+
+
+@media screen and (max-width: 1250px) {
+
+  .alternative_main_description_block .title h1{
+    font-size: 28px;
+  }
+
+  .vertical_slider{
+    position: relative;
+    right: 0px;
+    top:0px;
+    width: auto;
+  }
+
+  .sun_battery_block .sun_battery_content{
+    padding-left: 0px;
+  }
+
+  .sun_battery_block .sun_battery_image .sun_battery_image_platform img{
+    display:none;
+  }
+  .sun_battery_block .sun_battery_image .sun_battery_image_sun img{
+    display: none;
+  }
+  .sun_battery_block{
+    margin-right: 0px;
+  }
+  .quote_block .quote_text p{
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  .air_energy_block .air_energy_content .air_energy_description p{
+    padding-right: 0px;
+  }
+
+  .air_energy_block{
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  .air_energy_block .air_energy_image_wrap{
+    display: none;
+  }
+
 }

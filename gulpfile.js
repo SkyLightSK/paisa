@@ -23,6 +23,7 @@ gulp.task('script', function() {
 	return gulp.src([
 		'./app/libs/jquery/jquery-3.2.1.js',
 	 	'./app/libs/slick-1.6.0/slick/slick.js',
+	 	'./app/libs/lightbox2/js/lightbox.js',
 		'./app/libs/jQuery-viewport-checker-master/dist/jquery.viewportchecker.min.js',
 		'./app/js/modules/**/*.js'])
 	.pipe(concat('index.js', {newLine: '\r\n;'}))

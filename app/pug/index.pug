@@ -13,9 +13,10 @@ html(lang='en')
 								- var titleLeft = ["Альтернативный источник энергии", "Электроснабжение промышленных и гражданских сооружений"]
 								- var imgLeft = ["green","blue"]
 								each val in [0,1]
-									.about_us_icons_left_item
-										h3= titleLeft[val]
-										img(src="img/"+ imgLeft[val] +".png")
+									a(href="#")
+										.about_us_icons_left_item
+											h3= titleLeft[val]
+											img(src="img/"+ imgLeft[val] +".png")
 						.col-lg-4
 							.center_about_us_description
 								.center_about_us_description_wrapper
@@ -29,9 +30,10 @@ html(lang='en')
 								- var title = [ "Удаленный: - контроль, - управление, - наблюдение","Станки с числовым прграммным управлением, фрезировка, лазерная гравировка"]
 								- var img = ["red","brown"]
 								each val in [0,1]
-									.about_us_icons_right_item
-										h3= title[val]
-										img(src="img/" + img[val] + ".png")
+									a(href="#")
+										.about_us_icons_right_item
+											h3= title[val]
+											img(src="img/" + img[val] + ".png")
 
 
 			.banner_description_block

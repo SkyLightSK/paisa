@@ -47,6 +47,7 @@ gulp.task('watch', ['sass', 'script', 'pug'], function() {
 
 	gulp.watch('./app/scss/**/*.scss', ['sass']);
 	gulp.watch('./app/pug/**/*.pug', ['pug-watch']);
+	gulp.watch('./app/pug/**/*.svg', ['pug-watch']);
 	gulp.watch('./app/js/modules/**/*.js', ['script']);
 	gulp.watch('./app/pug/**/*.html', ['pug-watch']);
 

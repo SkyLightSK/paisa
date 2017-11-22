@@ -27,9 +27,10 @@ html(lang='en')
 
                                 .sun_battery_image
                                     .sun_battery_image_sun
-                                        img(src="img/alternative/sun.png")
+                                        img.shadow(src="img/alternative/sun-shadow.png")
+                                        img.sun(src="img/alternative/sun.png")
                                     .sun_battery_image_platform
-                                        img(src="img/alternative/sun_plat.png")
+                                        include modules/alternative/panels.svg
                                 .sun_battery_content
                                     .sun_battery_title
                                         h3 СОЛНЕЧНЫЕ БАТАРЕИ

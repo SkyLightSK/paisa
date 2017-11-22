@@ -1,0 +1,13 @@
+<svg
+        width="235"
+        height="223"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:avocode="https://avocode.com/"
+        viewBox="0 0 235 250">
+    <image xlink:href="/img/alternative/solar-panel.png" x="0" y="109" height="141" width="235" />
+    <path d="M 125 0 v 80" stroke-dasharray="12" stroke="#f7931e" stroke-width="2" fill="transparent"/>
+    <path d="M 125 80 h 54 v 45" stroke-dasharray="12" stroke="#f7931e" stroke-width="2" fill="transparent"/>
+    <path d="M 125 80 h -52 v 103" stroke-dasharray="12" stroke="#f7931e" stroke-width="2" fill="transparent"/>
+</svg>

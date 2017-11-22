@@ -130,32 +130,41 @@
   .sun_battery_image{
 
     .sun_battery_image_sun {
-      img {
+      .sun, .shadow {
         position: absolute;
-        left: 0px;
-        animation: rotation 10s linear infinite;
+        top: -63px;
+        left: 68px;
+        animation: rotation 10s infinite linear;
         z-index: 1;
-        left: 62px;
-        top: -69px;
-        transform-origin: 77px 68px;
-        //@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-        @keyframes rotation {
-          0% {-webkit-transform:rotate(0deg);
-            -moz-transform:rotate(0deg);
-            -o-transform:rotate(0deg);
-            transform:rotate(0deg);}
-          100% {-webkit-transform:rotate(360deg);
-            -moz-transform:rotate(720deg);
-            -o-transform:rotate(360deg);
-            transform:rotate(360deg);}
-        }
+      }
+      .shadow {
+        left: 60px;
+        top: -55px;
+        filter: brightness(0) blur(3px);
+        opacity: 0.1;
+      }
+      @keyframes rotation {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
     }
     .sun_battery_image_platform {
-      img {
+      svg {
         position: absolute;
-        bottom: 0px;
+        top: 30px;
+        bottom: 0;
         left: 5px;
+        path {
+          animation: rayAnimation 10s linear reverse infinite;
+          @keyframes rayAnimation {
+            0% {
+              stroke-dashoffset: 0;
+            }
+            100% {
+              stroke-dashoffset: 100%;
+            }
+          }
+        }
       }
     }
   }

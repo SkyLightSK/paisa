@@ -290,3 +290,31 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .sprut_block{
+    display: none;
+  }
+  .system_sprut_description_block .system_sprut_description_wrapper .system_sprut_item{
+    margin: 10px 0px;
+  }
+  .remote_control_services .remote_control_services_wrapper .remote_control_services_item_block .remote_control_services_item{
+    margin: 10px 0px;
+  }
+  .remote_control_banners_block .remote_control_banner_left_image .remote_control_banner_left{
+    position: relative;
+    transform: none;
+    margin: 10px;
+  }
+  .remote_control_banners_block .remote_control_banner_right_image .remote_control_banner_right{
+    position: relative;
+    transform: none;
+    margin: 10px;
+  }
+  .remote_control_services .remote_control_services_wrapper{
+    margin-bottom: 0px;
+  }
+  .remote_control_services .remote_control_services_wrapper:after{
+    height: 200px;
+  }
+}

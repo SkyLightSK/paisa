@@ -485,6 +485,16 @@ footer {
       .footer_number {
         font-size: 13px;
       }
+      .footer_adress:before{
+        left: -14px;
+      }
+      .footer_number:before{
+        left: -29px;
+      }
+    }
+    .footer_content_wrapper .footer_button{
+      margin-top: 0px;
+      margin-bottom: 12px;
     }
   }
 }
